@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import store from './store';
 import './components';
+import { filters } from './filters';
 
 import './assets/sass/index.scss';
 
