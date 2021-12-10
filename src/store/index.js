@@ -59,7 +59,6 @@ export default new Vuex.Store({
           return;
         }
         const { data } = isLocal ? await localData(params) : await api.getPayments(params);
-        console.log('loadData');
         if (Array.isArray(data)) {
           state.count = data.length;
           const skipValue = (Number(params?.page ?? localStorage?.getItem('page') ?? state.page) - 1) * Number(state.pageSize);

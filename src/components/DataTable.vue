@@ -1,8 +1,5 @@
 <template>
   <div class="data-table">
-    <pre>
-      {{ moneyFilter }}
-    </pre>
     <div class="data-table__filter">
       <ui-money
         v-model="moneyQuery"

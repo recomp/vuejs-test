@@ -26,8 +26,6 @@ export default {
       const value = event.target.value
         .replace(new RegExp(/[a-zA-Z]+/, 'g'), '')
         .replace(new RegExp(/^[а-яё -]+$/i, 'g'), '');
-        // .replace(new RegExp(/\.\d*\.\d*/, 'g'), '');
-      console.log('value', this.$options.filters.moneyFormat(value));
       this.valueInput = value;
       this.$emit('input', value);
     },
